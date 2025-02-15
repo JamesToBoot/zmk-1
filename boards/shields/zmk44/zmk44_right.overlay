@@ -1,1 +1,1 @@
-#include "my_keyboard.dtsi" // The shared dtsi file is included in the overlay
+#include "zmk44.dtsi" // The shared dtsi file is included in the overlay
