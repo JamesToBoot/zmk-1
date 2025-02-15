@@ -1,7 +1,13 @@
 #include <dt-bindings/zmk/matrix_transform.h> // Put this with the other includes at the top of your dtsi
 
 / {
-    
+
+    chosen {
+        zmk,kscan = &kscan0;
+        zmk,physical-layout = &physical_layout0;
+        // Other chosen items
+    };
+
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
@@ -19,6 +25,7 @@
                     <&pro_micro 14 GPIO_ACTIVE_HIGH>,
                     <&pro_micro 16 GPIO_ACTIVE_HIGH>, 
                     <&pro_micro 10 GPIO_ACTIVE_HIGH>;
+    };
 
     default_transform: keymap_transform0 {
         compatible = "zmk,matrix-transform";
@@ -30,9 +37,11 @@
             RC(2,0) RC(2,1) RC(2,2) RC(2,3) RC(2,4) RC(2,5)        RC(2,6) RC(2,7) RC(2,8) RC(2,9) RC(2,10) RC(2,11)
                     RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5)        RC(3,6) RC(3,7) RC(3,8) RC(3,9) RC(3,10)
         >;
-
-
-
-
     };
+
+
+
+
+
+    
 };
