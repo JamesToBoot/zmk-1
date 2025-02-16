@@ -9,6 +9,9 @@
         // zmk,matrix_transform = &default_transform;
     };
 
+
+
+    //possible that I have kscan and default transform in reverse order
     kscan0: kscan0 {
         compatible = "zmk,kscan-gpio-matrix";
         diode-direction = "row2col";
