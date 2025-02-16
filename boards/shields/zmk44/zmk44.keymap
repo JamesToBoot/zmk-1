@@ -1,14 +1,38 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-
 //do i need to include this for bluetooth keys    #include <dt-bindings/zmk/bt.h>
 
 / {
+    // possible hold tap and layer combos
+    // behaviors {
+    //     ht: hold_tap {
+    //         compatible = "zmk,behavior-hold-tap";
+    //         #binding-cells = <2>;
+    //         flavor = "tap-preferred";
+    //         tapping-term-ms = <220>;
+    //         quick-tap-ms = <150>;
+    //         global-quick-tap;
+    //         bindings = <&kp>, <&kp>;
+    //     };
+    // };
+
+
+    // conditional_layers {
+    //     compatible = "zmk,conditional-layers";
+    //     tri_layer {
+    //         if-layers = <1 2>;
+    //         then-layer = <3>;
+    //     };
+    // };
+
+
+
+
 
     keymap {
         compatible = "zmk,keymap";
 
-        base_layer { // Layer 0
+        base_layer { // Layer 0    possible keys: &sys_reset   &bootloader    &bt BT_SEL 0   thru   &bt BT_SEL 5   &bt BT_CLR
             bindings = <
                 &kp Q       &kp W       &kp E       &kp R       &kp T                                   &kp Y       &kp U       &kp I       &kp O       &kp P
                 &kp A       &kp S       &kp D       &kp F       &kp G       &kp X           &kp x       &kp H       &kp J       &kp K       &kp L       &kp SEMI
