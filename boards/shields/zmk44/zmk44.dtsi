@@ -5,7 +5,8 @@
     chosen {
         zmk,kscan = &kscan0;
         zmk,physical-layout = &physical_layout0;
-        // Other chosen items
+        // above is possibly incorrect. May need to use the below:
+        // zmk,matrix_transform = &default_transform;
     };
 
     kscan0: kscan0 {
@@ -43,5 +44,5 @@
 
 
 
-    
+
 };
