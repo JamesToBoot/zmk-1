@@ -19,4 +19,7 @@
 #
 include:
     - board: nice_nano_v2
-      shield: zmk44
+      shield: zmk44_left
+      
+    - board: nice_nano_v2
+      shield: zmk44_right
