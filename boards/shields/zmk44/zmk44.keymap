@@ -1,6 +1,6 @@
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
-//do i need to include this for bluetooth keys    #include <dt-bindings/zmk/bt.h>
+#include <dt-bindings/zmk/bt.h>
 
 / {
     // possible hold tap and layer combos
